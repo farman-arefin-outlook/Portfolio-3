@@ -5,8 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Custome CSS  -->
+    <link rel="stylesheet" href="Style/style.css">
     <title>Panda Store</title>
 </head>
 
@@ -44,13 +47,13 @@
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="row info-background bg-gradient p-5 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>Cool Dude Headphone</h1>
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
                                 <h1>$420</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="buy-now-btn">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -58,13 +61,13 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="row info-background bg-gradient p-5 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>Mega LCD TV For Sports</h1>
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
                                 <h1>$420</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="buy-now-btn">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
@@ -72,13 +75,13 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row bg-info bg-gradient p-5 d-flex align-items-center">
+                        <div class="row info-background bg-gradient p-5 d-flex align-items-center">
                             <div class="col-lg-7">
                                 <h1>X-Box for your living room</h1>
                                 <p>This is the best headphone in the world for people who just want to waste time in
                                     front of funky world.</p>
                                 <h1>$420</h1>
-                                <button class="btn btn-warning">Buy Now</button>
+                                <button class="buy-now-btn">Buy Now</button>
                             </div>
                             <div class="col-lg-5">
                                 <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
@@ -103,7 +106,7 @@
     <!-- This is main  -->
     <main>
         <!-- This is categories  -->
-        <section class="container my-5">
+        <section class="container my-5 categories">
             <div class="row g-2">
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="p-3 border bg-warning d-flex align-items-center justify-content-between rounded-3">
@@ -139,7 +142,7 @@
                                 content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -152,7 +155,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -167,7 +170,7 @@
                                 action.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -187,7 +190,7 @@
                                 content. This content is a little bit longer.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -200,7 +203,7 @@
                                 content.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -215,7 +218,7 @@
                                 action.</p>
                         </div>
                         <div class="m-3">
-                            <button class="btn btn-warning">Buy Now</button>
+                            <button class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -223,12 +226,12 @@
         </section>
         <!-- This is Subscribe section  -->
         <section style="height: 300px;"
-            class="container d-flex justify-content-center bg-info align-items-center rounded-3" id="subscribe">
+            class="container d-flex justify-content-center info-background align-items-center rounded-3" id="subscribe">
             <div>
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
-                <input type="email" name="" id="" placeholder="Enter your email"><br>
-                <button class="btn btn-warning">SUBMIT</button>
+                <input class="form-control" type="email" name="" id="" placeholder="Enter your email"><br>
+                <button class="buy-now-btn">SUBMIT</button>
             </div>
         </section>
     </main>
