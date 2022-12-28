@@ -129,7 +129,7 @@
             </div>
         </section>
         <!---------- This is Cards ---------->
-        <section class="container " id="shoes">
+        <section class="container " id="shoes" class="blog">
             <h2 id="shoes-item">Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -177,7 +177,7 @@
             </div>
         </section>
         <!-------- This Backpack Card ------ -->
-        <section class="container my-5" id="backpack">
+        <section class="container my-5" id="backpack" class="blog">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -218,7 +218,7 @@
                                 action.</p>
                         </div>
                         <div class="m-3">
-                            <button class="buy-now-btn">Buy Now</button>
+                            <button id="btn-click" class="buy-now-btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -227,12 +227,32 @@
         <!-- This is Subscribe section  -->
         <section style="height: 300px;"
             class="container d-flex justify-content-center info-background align-items-center rounded-3" id="subscribe">
-            <div>
+            <div id="stay">
                 <h1>LET'S STAY IN TOUCH</h1>
                 <p>Get updates on sales, specials and more</p>
-                <input class="form-control" type="email" name="" id="" placeholder="Enter your email"><br>
-                <button class="buy-now-btn">SUBMIT</button>
+                <input class="form-control" type="email" name="" id="email-field" placeholder="Enter your email"><br>
+                <button id="update-name" class="buy-now-btn">SUBMIT</button>
             </div>
+        </section>
+
+        <section id="comment" class="comment-section container">
+            <h3>Your Comments</h3>
+            <div id="comment-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, dolor? Vitae consequatur voluptate
+                    similique, eum nesciunt rerum voluptatem asperiores, non laborum voluptas officiis culpa ut itaque
+                    omnis labore blanditiis explicabo?</p>
+                <p>Atque minus voluptate, quisquam vitae repellat voluptates illo aliquid tempore, quibusdam velit
+                    tenetur ipsa. Explicabo voluptatibus beatae corrupti eaque quo, ex ipsa illum blanditiis unde
+                    aliquid temporibus eius officiis velit?</p>
+                <p>Ipsa ut quia ea eius illo obcaecati molestiae atque, beatae ipsam eaque porro eos quidem repudiandae
+                    iusto dolorum aliquam provident exercitationem voluptas consectetur velit ipsum. Beatae expedita ab
+                    aspernatur non.</p>
+            </div>
+
+            <p>Add your comment</p>
+            <textarea name="" id="new-comment" cols="65" rows="3"></textarea>
+            <br>
+            <button id="submit-comment">Post</button>
         </section>
     </main>
     <!-- This is footer  -->
@@ -245,15 +265,18 @@
 
     <script src="script.js"></script>
     <script>
-        //const blogTitle = document.getElementsByTagName('h2');
-        const firstTitle = document.getElementById('shoes-item');
-        firstTitle.style.color = 'green';
-        firstTitle.style.textAlign = 'center';
-        firstTitle.innerText = 'My awesome shoes';
-        firstTitle.style.backgroundColor = 'salmon';
-        firstTitle.style.padding = '10px';
-        firstTitle.style.margin = '10px';
-
+        document.getElementById('update-name').addEventListener('click', function () {
+            const nameField = document.getElementById('email-field');
+            console.log(nameField.value);
+            nameField.value = '';
+        })
+        document.getElementById('submit-comment').addEventListener('click', function () {
+            const commentBox = document.getElementById('new-comment');
+            const newComment = document.createElement('p');
+            newComment.innerText = commentBox.value;
+            document.getElementById('comment-container').appendChild(newComment);
+            commentBox.value = '';
+        })
     </script>
 </body>
 
